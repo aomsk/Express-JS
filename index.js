@@ -1,9 +1,18 @@
 const express = require("express");
 const mongoose = require("mongoose");
+var bodyParser = require("body-parser");
+
 require("dotenv").config();
 
 const app = express();
-const routes = require("./routes/routes.js"); // import routes
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/json
+app.use(bodyParser.json());
+
+// import routes
+const routes = require("./routes/routes.js");
 app.use("/api", routes);
 
 // connect database
