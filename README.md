@@ -5,8 +5,8 @@
 ## **Create Project😍**
 
 ```
-npm init
-npm i express mongoose nodemon dotenv
+1. npm init || npm init -y
+2. npm i express mongoose nodemon dotenv body-parser
 ```
 
 ## **Start Project😊**
@@ -14,3 +14,13 @@ npm i express mongoose nodemon dotenv
 ```
 npm run start || npm start
 ```
+
+## **Note 📒**
+
+### MongoDB queries command
+
+- save => save data to DB
+- find => get all data from DB
+- findById => get data by ID
+- findByIdAndUpdate => find data by and update
+- findByIdAndDelete => find data by and delete
