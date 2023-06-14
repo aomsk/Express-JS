@@ -1,11 +1,12 @@
-# **Generate Project**
+# **Create Project**
 
 ```
-npx express-generator
+npm init
+npm i express mongoose nodemon dotenv
 ```
 
 # **Start Project**
 
 ```
-set DEBUG=express-js:* & npm start
+npm run start || npm start
 ```
