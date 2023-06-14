@@ -13,7 +13,9 @@ app.use(bodyParser.json());
 
 // import routes
 const routes = require("./routes/routes.js");
+const products_routes = require("./routes/products-routes");
 app.use("/api", routes);
+app.use("/products", products_routes);
 
 // connect database
 const mongoString = process.env.MONGODB_ATLAS_URL;
