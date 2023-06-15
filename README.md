@@ -15,7 +15,7 @@
 npm run start || npm start
 ```
 
-## **Note 📒**
+## **Note📒**
 
 ### MongoDB queries command
 
