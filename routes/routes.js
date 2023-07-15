@@ -42,8 +42,7 @@ router.get("/getOne/:id", async (req, res) => {
 router.patch("/update/:id", async (req, res) => {
   const { id } = req.params;
   try {
-    const updateData = req.body;
-    const options = { new: true };
+    c;
 
     const result = await Model.findByIdAndUpdate(id, updateData, options);
     res.send({ message: "update data sucessfuly", data: result });
